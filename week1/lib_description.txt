@@ -1,0 +1,14 @@
+The "gpdk045wc" library is part of a generic process design kit, "045" represents the minimum MOSFET channel width.
+This library file serves as a repository of essential data and parameters necessary for creating integrated circuits.
+This file is uploaded to the EDA tool so that designers can make circuit layouts which are precise and efficient.
+Library begins by outlining unit attributes such as time(ns), voltage(V) and current(mA) and the default power sources.
+It encompasses a range of design specifications, housing various cells, each dedicated to a specific logical operation such as ADD,SUB,XOR,DIF etc.
+The term "cell area" pertains to the physical dimensions of a standard cell and significantly influences the overall circuit size based on the number of cells employed.
+Each cell is equipped with a distant set of pins, each featuring diverse parameters. The Direction of these pins indicate if they are input or output.
+Each output pin consists of the functionality of the particular cell.
+Furthermore, each cell comes with its individual timing information, including factors such as propagation delays, setup times, and hold times. This information is crucial for accurate circuit performance estimation.
+Initially, we predefine all the types of delays involved in the timing parameters, like the slew rates, which are observed at the upper and lower thresholds for raise and fall time, along with their percentages.
+Each parameter is tested with the design; hence, the respective outputs are generated, which are used for the purpose of analysis. 
+Then all the transitions, like raise, fall, and propagation delays, are given for concluding all the timing parameter checks.
+Then the file contains the power parameters, like internal power, fall power, etc. 
+After this, we check the design cells for which the mapping has taken place for each pin, where the inputs and their raise and fall capacitance are defined. We even know the direction of input and output pins and their signal levels.
